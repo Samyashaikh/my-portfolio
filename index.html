@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dev Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <span class="logo">&lt;YourName /&gt;</span>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="#contact" class="btn-nav">Hire Me</a>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-tag">Available for work ✦</div>
+    <h1>I build things<br/><span class="accent">for the web.</span></h1>
+    <p class="hero-sub">Full-Stack Developer who turns ideas into clean, fast, and scalable products.</p>
+    <div class="hero-btns">
+      <a href="#projects" class="btn-primary">View My Work</a>
+      <a href="resume.pdf" class="btn-outline" download>Download CV</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat"><span>10+</span><label>Projects</label></div>
+      <div class="stat"><span>2+</span><label>Years Exp.</label></div>
+      <div class="stat"><span>5+</span><label>Happy Clients</label></div>
+    </div>
+    <div class="scroll-line"></div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="section-label">// about me</div>
+    <div class="about-grid">
+      <div class="about-img">
+        <div class="img-placeholder">
+          <span>Your<br/>Photo</span>
+          <div class="img-border"></div>
+        </div>
+      </div>
+      <div class="about-text">
+        <h2>Hey, I'm <span class="accent">Your Name</span></h2>
+        <p>I'm a passionate developer based in India. I love building sleek, performant web apps using modern technologies like React, Node.js, and more.</p>
+        <p>When I'm not coding, I'm exploring open-source, contributing to GitHub, or learning something new.</p>
+        <div class="about-tags">
+          <span>React</span><span>Node.js</span><span>MongoDB</span><span>TypeScript</span><span>Git</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="projects" id="projects">
+    <div class="section-label">// projects</div>
+    <h2>Things I've <span class="accent">Built</span></h2>
+    <div class="projects-grid">
+
+      <div class="project-card featured">
+        <div class="project-top">
+          <div class="project-icon">⚡</div>
+          <div class="project-links">
+            <a href="#">GitHub</a>
+            <a href="#">Live ↗</a>
+          </div>
+        </div>
+        <h3>Project One</h3>
+        <p>A full-stack web application with authentication, real-time updates, and a clean UI. Built with React and Node.js.</p>
+        <div class="project-stack">
+          <span>React</span><span>Node.js</span><span>MongoDB</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-top">
+          <div class="project-icon">🛠</div>
+          <div class="project-links">
+            <a href="#">GitHub</a>
+            <a href="#">Live ↗</a>
+          </div>
+        </div>
+        <h3>Project Two</h3>
+        <p>REST API service with JWT auth, rate limiting, and full documentation. Production-ready backend.</p>
+        <div class="project-stack">
+          <span>Express</span><span>PostgreSQL</span><span>Docker</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-top">
+          <div class="project-icon">🎯</div>
+          <div class="project-links">
+            <a href="#">GitHub</a>
+            <a href="#">Live ↗</a>
+          </div>
+        </div>
+        <h3>Project Three</h3>
+        <p>CLI tool that automates repetitive dev tasks. Saved 2+ hours per week for the team.</p>
+        <div class="project-stack">
+          <span>TypeScript</span><span>Node.js</span><span>Shell</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="skills" id="skills">
+    <div class="section-label">// skills</div>
+    <h2>My <span class="accent">Stack</span></h2>
+    <div class="skills-grid">
+      <div class="skill-group">
+        <h4>Frontend</h4>
+        <div class="skill-list">
+          <div class="skill-item"><span class="skill-name">React</span><div class="skill-bar"><div style="width:90%"></div></div></div>
+          <div class="skill-item"><span class="skill-name">JavaScript</span><div class="skill-bar"><div style="width:88%"></div></div></div>
+          <div class="skill-item"><span class="skill-name">TypeScript</span><div class="skill-bar"><div style="width:75%"></div></div></div>
+          <div class="skill-item"><span class="skill-name">CSS / Tailwind</span><div class="skill-bar"><div style="width:85%"></div></div></div>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h4>Backend</h4>
+        <div class="skill-list">
+          <div class="skill-item"><span class="skill-name">Node.js</span><div class="skill-bar"><div style="width:85%"></div></div></div>
+          <div class="skill-item"><span class="skill-name">Express</span><div class="skill-bar"><div style="width:82%"></div></div></div>
+          <div class="skill-item"><span class="skill-name">MongoDB</span><div class="skill-bar"><div style="width:78%"></div></div></div>
+          <div class="skill-item"><span class="skill-name">PostgreSQL</span><div class="skill-bar"><div style="width:70%"></div></div></div>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h4>Tools & DevOps</h4>
+        <div class="skill-list">
+          <div class="skill-item"><span class="skill-name">Git & GitHub</span><div class="skill-bar"><div style="width:92%"></div></div></div>
+          <div class="skill-item"><span class="skill-name">Docker</span><div class="skill-bar"><div style="width:65%"></div></div></div>
+          <div class="skill-item"><span class="skill-name">Linux / CLI</span><div class="skill-bar"><div style="width:80%"></div></div></div>
+          <div class="skill-item"><span class="skill-name">Figma</span><div class="skill-bar"><div style="width:60%"></div></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="section-label">// contact</div>
+    <h2>Let's <span class="accent">Work Together</span></h2>
+    <p class="contact-sub">Have a project in mind? I'd love to hear about it.</p>
+    <div class="contact-box">
+      <div class="contact-info">
+        <a href="mailto:your@email.com">📧 your@email.com</a>
+        <a href="https://github.com/yourusername" target="_blank">🐙 github.com/yourusername</a>
+        <a href="https://linkedin.com/in/yourusername" target="_blank">💼 linkedin.com/in/yourusername</a>
+      </div>
+      <form class="contact-form" onsubmit="return false;">
+        <input type="text" placeholder="Your Name" />
+        <input type="email" placeholder="Your Email" />
+        <textarea placeholder="Your Message" rows="4"></textarea>
+        <button type="submit" class="btn-primary">Send Message →</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <span>Designed & Built by <span class="accent">Your Name</span></span>
+    <span>2025</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
