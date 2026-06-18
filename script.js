@@ -1,3 +1,4 @@
+// ===== SMOOTH NAV HIGHLIGHT =====
 const sections = document.querySelectorAll('section[id]');
 const navLinks = document.querySelectorAll('nav ul a');
 
@@ -13,10 +14,12 @@ const observer = new IntersectionObserver((entries) => {
 
 sections.forEach(sec => observer.observe(sec));
 
+// ===== NAV ACTIVE STYLE =====
 const style = document.createElement('style');
 style.textContent = `nav ul a.active { color: var(--text) !important; }`;
 document.head.appendChild(style);
 
+// ===== SCROLL REVEAL =====
 const revealObserver = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
@@ -33,6 +36,7 @@ document.querySelectorAll('.project-card, .skill-group, .about-grid').forEach(el
   revealObserver.observe(el);
 });
 
+// ===== CONTACT FORM =====
 const form = document.querySelector('.contact-form');
 const btn = form?.querySelector('button');
 if (btn) {
@@ -52,9 +56,10 @@ if (btn) {
   });
 }
 
+// ===== TYPED EFFECT IN HERO =====
 const heroAccent = document.querySelector('.hero h1 .accent');
 if (heroAccent) {
-  const words = ['the web.', 'humans.', 'the future.'];
+  const words = ['cybersecurity.', 'ethical hacking.', 'secure design.'];
   let i = 0;
   setInterval(() => {
     i = (i + 1) % words.length;
